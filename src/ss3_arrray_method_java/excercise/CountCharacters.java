@@ -4,13 +4,14 @@ import java.util.Scanner;
 
 public class CountCharacters {
     public static void main(String[] args) {
-        int[] array = {1, 2, 3, 4, 5, 6, 1, 2, 3, 1, 2, 3, 4, 5, 1, 2};
+
         Scanner sc = new Scanner(System.in);
-        System.out.println("nhập số bạn muốn đếm");
-        int number = Integer.parseInt(sc.nextLine());
+        System.out.println("nhập chuỗi");
+        String str = sc.nextLine();
+        char cha = 'i';
         int count = 0;
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] == number) {
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == cha) {
                 count++;
             }
         }
