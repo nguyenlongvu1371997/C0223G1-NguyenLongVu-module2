@@ -8,7 +8,7 @@ public class CountCharacters {
         Scanner sc = new Scanner(System.in);
         System.out.println("nhập chuỗi");
         String str = sc.nextLine();
-        char cha = 'i';
+        char cha = sc.nextLine().charAt(0);
         int count = 0;
         for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) == cha) {
