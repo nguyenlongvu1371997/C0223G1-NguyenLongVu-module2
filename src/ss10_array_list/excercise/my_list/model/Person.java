@@ -1,4 +1,4 @@
-package ss10_array_list.excercise.my_list;
+package ss10_array_list.excercise.my_list.model;
 
 import java.util.Date;
 

@@ -1,8 +1,6 @@
-package ss10_array_list.excercise.my_list;
+package ss10_array_list.excercise.my_list.model;
 
-import ss10_array_list.excercise.my_list.Person;
-
-import java.util.Date;
+import ss10_array_list.excercise.my_list.model.Person;
 
 public class Teacher extends Person {
     private String specialize;
