@@ -31,7 +31,7 @@ public class Controller {
                         studentService.addStudent();
 
                     } else if (choose.equals("2")) {
-                    teacherService.addTeacher();
+                        teacherService.addTeacher();
                     } else {
                         System.out.println("nhập sai");
                     }
@@ -42,7 +42,7 @@ public class Controller {
                     if (choose1.equals("1")) {
                         studentService.deleteStudent();
                     } else if (choose1.equals("2")) {
-                    teacherService.deleteTeacher();
+                        teacherService.deleteTeacher();
                     }
                     break;
                 case "3":
@@ -51,7 +51,7 @@ public class Controller {
                     if (choose2.equals("1")) {
                         studentService.displayStudent();
                     } else if (choose2.equals("2")) {
-                    teacherService.displayTeacher();
+                        teacherService.displayTeacher();
                     }
                     break;
                 case "4":

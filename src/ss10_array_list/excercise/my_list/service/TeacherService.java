@@ -6,9 +6,10 @@ import ss10_array_list.excercise.my_list.repository.TeacherList;
 
 import java.util.Scanner;
 
-public class TeacherService {
+public class TeacherService implements ITeacherService {
     private Scanner sc = new Scanner(System.in);
-TeacherList teacherList = new TeacherList();
+    TeacherList teacherList = new TeacherList();
+
     public void addTeacher() {
         System.out.println("nhập lần lượt mã, tên, ngày sinh, giới tính, chuyên môn cho giảng viên");
         String code = sc.nextLine();
@@ -22,10 +23,10 @@ TeacherList teacherList = new TeacherList();
     public void deleteTeacher() {
         System.out.println("nhập mã giảng viên bạn muốn xóa");
         String code = sc.nextLine();
-        if(teacherList.deleteTeacher(code)){
+        if (teacherList.deleteTeacher(code)) {
 
-                System.out.println("xóa thành công");
-            } else {
+            System.out.println("xóa thành công");
+        } else {
             System.out.println("không tìm thấy");
         }
     }
