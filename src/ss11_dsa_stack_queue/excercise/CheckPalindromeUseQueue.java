@@ -1,4 +1,4 @@
-package s11_dsa_stack_queue.excercise;
+package ss11_dsa_stack_queue.excercise;
 
 import java.util.*;
 

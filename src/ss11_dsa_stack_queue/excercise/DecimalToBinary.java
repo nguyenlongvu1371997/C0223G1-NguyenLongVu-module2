@@ -1,6 +1,4 @@
-package s11_dsa_stack_queue.excercise;
-
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+package ss11_dsa_stack_queue.excercise;
 
 import java.util.Scanner;
 import java.util.Stack;
