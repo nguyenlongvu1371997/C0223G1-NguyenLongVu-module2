@@ -60,10 +60,10 @@ public class ProductRepository implements IProductRepository {
     }
 
     public void sortProductIncrease(){
-        listProduct.sort((o1, o2) -> o1.getPrice() - o2.getPrice());
+        listProduct.sort((o1, o2) -> (int) (o1.getPrice() - o2.getPrice()));
     }
     public void sortProductDecrease(){
-        listProduct.sort((o1, o2) -> o2.getPrice() - o1.getPrice());
+        listProduct.sort((o1, o2) -> (int) (o2.getPrice() - o1.getPrice()));
     }
 
 }
