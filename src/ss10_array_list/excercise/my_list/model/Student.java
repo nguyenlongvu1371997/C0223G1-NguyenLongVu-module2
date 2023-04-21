@@ -15,6 +15,9 @@ public class Student extends Person {
     public Student() {
     }
 
+    public Student(int parseInt, String s, String s1) {
+    }
+
     public int getScore() {
         return score;
     }
