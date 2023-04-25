@@ -1,5 +1,6 @@
 package ss17_serialization.exercise.product_management.controller;
 
+import ss17_serialization.exercise.product_management.repository.ProductRepository;
 import ss17_serialization.exercise.product_management.service.ProductService;
 
 import java.util.Scanner;
