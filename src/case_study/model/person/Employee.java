@@ -3,12 +3,12 @@ package case_study.model.person;
 public class Employee extends Person {
     private String degree;
     private String position;
-    private double salary;
+    private String salary;
 
     public Employee() {
     }
 
-    public Employee(String code, String name, String dayOfBirth, String gender, String id, String phoneNumber, String email, String degree, String position, double salary) {
+    public Employee(String code, String name, String dayOfBirth, String gender, String id, String phoneNumber, String email, String degree, String position, String salary) {
         super(code, name, dayOfBirth, gender, id, phoneNumber, email);
         this.degree = degree;
         this.position = position;
@@ -31,44 +31,31 @@ public class Employee extends Person {
         this.position = position;
     }
 
-    public double getSalary() {
+    public String getSalary() {
         return salary;
     }
 
-    public void setSalary(double salary) {
+    public void setSalary(String salary) {
         this.salary = salary;
-    }
-
-    public void setAll(String code, String name, String dayOfBirth, String gender, String id, String phoneNumber, String email, String degree, String position, double salary) {
-        setCode(code);
-        setDegree(degree);
-        setId(id);
-        setName(name);
-        setPosition(position);
-        setDayOfBirth(dayOfBirth);
-        setGender(gender);
-        setPhoneNumber(phoneNumber);
-        setEmail(email);
-        setSalary(salary);
     }
 
     @Override
     public String toString() {
         return "Employee{" +
-                "degree='" + degree + '\'' +
-                ", position='" + position + '\'' +
-                ", salary=" + salary +
-                ", code='" + code + '\'' +
+                "code='" + code + '\'' +
                 ", name='" + name + '\'' +
-                ", dayOfBirth='" + dayOfBirth + '\'' +
+                ", dayOfBirth='" + dateOfBirth + '\'' +
                 ", gender='" + gender + '\'' +
                 ", id='" + id + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +
                 ", email='" + email + '\'' +
+                "degree='" + degree + '\'' +
+                ", position='" + position + '\'' +
+                ", salary=" + salary +
                 '}';
     }
 
     public String infoEmployee() {
-        return "{" + code + "," + name + "," + dayOfBirth + "," + gender + "," + id + "," + phoneNumber + "," + email + "," + degree + "," + position + "," + salary;
+        return code + "," + name + "," + dateOfBirth + "," + gender + "," + id + "," + phoneNumber + "," + email + "," + degree + "," + position + "," + salary;
     }
 }

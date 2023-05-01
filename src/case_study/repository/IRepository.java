@@ -1,5 +1,7 @@
 package case_study.repository;
 
-public interface IRepository {
+import case_study.model.person.Employee;
 
+public interface IRepository {
+    String display();
 }

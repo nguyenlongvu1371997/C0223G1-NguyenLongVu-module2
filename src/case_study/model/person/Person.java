@@ -3,7 +3,7 @@ package case_study.model.person;
 public abstract class Person {
     String code;
     String name;
-    String dayOfBirth;
+    String dateOfBirth;
     String gender;
     String id;
     String phoneNumber;
@@ -11,10 +11,10 @@ public abstract class Person {
     public Person(){
     }
 
-    public Person(String code, String name, String dayOfBirth, String gender, String id, String phoneNumber, String email) {
+    public Person(String code, String name, String dateOfBirth, String gender, String id, String phoneNumber, String email) {
         this.code = code;
         this.name = name;
-        this.dayOfBirth = dayOfBirth;
+        this.dateOfBirth = dateOfBirth;
         this.gender = gender;
         this.id = id;
         this.phoneNumber = phoneNumber;
@@ -37,12 +37,12 @@ public abstract class Person {
         this.name = name;
     }
 
-    public String getDayOfBirth() {
-        return dayOfBirth;
+    public String getDateOfBirth() {
+        return dateOfBirth;
     }
 
-    public void setDayOfBirth(String dayOfBirth) {
-        this.dayOfBirth = dayOfBirth;
+    public void setDateOfBirth(String dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
     }
 
     public String getGender() {
@@ -82,7 +82,7 @@ public abstract class Person {
         return "Person{" +
                 "code='" + code + '\'' +
                 ", name='" + name + '\'' +
-                ", dayOfBirth='" + dayOfBirth + '\'' +
+                ", dayOfBirth='" + dateOfBirth + '\'' +
                 ", gender='" + gender + '\'' +
                 ", id='" + id + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +

@@ -14,16 +14,16 @@ public class ReadAndWriteEmployee {
             File file = new File(PATH);
             fileReader = new FileReader(file);
             bufferedReader = new BufferedReader(fileReader);
-            String temp;
-            while ((temp = bufferedReader.readLine()) != null) {
+            String temp=null;
+            while ((temp = bufferedReader.readLine()) != null && !temp.equals("")) {
                 String[] string = temp.split(",");
-                list.add(new Employee(string[0], string[1], string[2], string[3], string[4], string[5], string[6], string[7], string[8], Double.parseDouble(string[9])));
+                list.add(new Employee(string[0], string[1], string[2], string[3], string[4], string[5], string[6], string[7], string[8], string[9]));
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        } finally {
+        }  finally {
             try {
                 fileReader.close();
                 bufferedReader.close();
@@ -39,7 +39,7 @@ public class ReadAndWriteEmployee {
         BufferedWriter bufferedWriter = null;
         try {
             File file = new File(PATH);
-            fileWriter = new FileWriter(file, true);
+            fileWriter = new FileWriter(file);
             bufferedWriter = new BufferedWriter(fileWriter);
             for (Employee e : list) {
                 bufferedWriter.write(e.infoEmployee());
@@ -56,6 +56,5 @@ public class ReadAndWriteEmployee {
                 e.printStackTrace();
             }
         }
-
     }
 }

@@ -1,12 +1,14 @@
 package case_study.model.person;
 
-public class Customer extends Person{
+public class Customer extends Person {
     private String type;
     private String address;
-    public Customer(){
+
+    public Customer() {
     }
 
-    public Customer(String code, String name, String dayOfBirth, String gender, String id, String phoneNumber, String email, String type, String address) {
+    public Customer(String code, String name, String dayOfBirth, String gender,
+                    String id, String phoneNumber, String email, String type, String address) {
         super(code, name, dayOfBirth, gender, id, phoneNumber, email);
         this.type = type;
         this.address = address;
@@ -27,25 +29,31 @@ public class Customer extends Person{
     public void setAddress(String address) {
         this.address = address;
     }
-    public void booking(){
+
+    public void booking() {
 
     }
-    public void makeContract(){
+
+    public void makeContract() {
 
     }
 
     @Override
     public String toString() {
         return "Customer{" +
-                "type='" + type + '\'' +
-                ", address='" + address + '\'' +
                 ", code='" + code + '\'' +
                 ", name='" + name + '\'' +
-                ", dayOfBirth='" + dayOfBirth + '\'' +
+                ", dayOfBirth='" + dateOfBirth + '\'' +
                 ", gender='" + gender + '\'' +
                 ", id='" + id + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +
                 ", email='" + email + '\'' +
+                ", type='" + type + '\'' +
+                ", address='" + address + '\'' +
                 '}';
+    }
+
+    public String infoCustomer() {
+        return code + "," + name + "," + dateOfBirth + "," + gender + "," + id + "," + phoneNumber + "," + email + "," + type + "," + address;
     }
 }
